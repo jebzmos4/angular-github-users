@@ -5,9 +5,9 @@ export interface User {
     html_url: string;
     followers_url: string;
     following_url: string;
-    gists_url:string;
+    gists_url: string;
     starred_url: string;
-    subscriptions_url:string;
+    subscriptions_url: string;
     organizations_url: string;
     repos_url: string;
     events_url: string;

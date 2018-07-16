@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubUsersService } from '../github-users.service';
+import { User } from '../user';
 
 @Component({
   selector: 'app-user-list',
@@ -8,14 +9,14 @@ import { GithubUsersService } from '../github-users.service';
 })
 export class UserListComponent implements OnInit {
 
-  users;
+  users: User[];
   constructor(private githubUsersService: GithubUsersService) { }
 
   ngOnInit() {
     this.githubUsersService.getUsers()
-    .subscribe(users => {
+    .subscribe((users: User[]) => {
+      console.log('USERS', users);
       this.users = users;
     });
   }
-
 }

@@ -1,0 +1,31 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.user{
+    width: 200px;
+    padding: 10px;
+}
+
+.user__image-div{
+    border: 1px solid yellow;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.user-image{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user__details{
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+}

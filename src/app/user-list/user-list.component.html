@@ -1,1 +1,14 @@
-<h1>{{users | json}}</h1>
+<div class="container">
+    <div class="user" *ngFor="let user of users"> 
+        <div class="user__image-div">
+            <a href="#">
+                <img [src]="user.avatar_url" alt="" class="user-image">
+            </a>
+        </div>
+        <div class="user__details">
+            <a href="{{user.html_url}}" class="user__details-name">@{{user.login}}</a>
+        </div>
+    </div>
+    
+</div>
+
